@@ -14,9 +14,7 @@
 
 
 <body class="container">
-
     <h1>Explore Colorado Hunting Units</h1>
-    <!-- <p>Either Sex Archery Map</p> -->
     <form method="POST" action="/results">
         <div class="form-row">
             <div class="form-group col-sm-6 col-md-3">
@@ -61,6 +59,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>Season</th>
                     <th scope="col">Bulls</th>
                     <th scope="col">Cows</th>
                     <th scope="col">Calves</th>
@@ -71,6 +70,7 @@
             </thead>
             <tbody>
                 <tr>
+                    <th>Overall</th>
                     <td>24</td>
                     <td>42</td>
                     <td>7</td>
@@ -82,12 +82,12 @@
         </table>
     </div>
 
-    <div class="border p-2">
+    <div class="border p-2 mb-4">
         <h2>Draw Odds</h2>
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col"># Preference Points</th>
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
                     <th scope="col">Handle</th>
@@ -115,6 +115,11 @@
             </tbody>
         </table>
     </div>
+    <ul class="list-group">
+        <li class="list-group-item">Hunt Maps</li>
+        <li class="list-group-item">OTC Elk Archery</li>
+        <li class="list-group-item">OTC Rifle Elk</li>
+    </ul>
 </body>
 
 
