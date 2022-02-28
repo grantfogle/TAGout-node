@@ -15,10 +15,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/results', (req, res) => {
-    const { species, sex, method, unit } = req.body;
+    const { species, sex, season, unit } = req.body;
     // let's get puppeteer setup
     // make async call
-    console.log(species, sex, method, unit);
+    console.log(species, sex, season, unit);
     res.render('home', {
         results: []
     });

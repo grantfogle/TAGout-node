@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 
 function getHuntDetails(species, sex, unit, method, season) {
-
+    console.log('gethunt details')
 }
 
 // elk harvest stats
