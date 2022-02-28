@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<title>TAGout</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        padding: 50px;
+    }
+</style>
+
+
+<body class="container">
+
+    <h1>Explore Colorado Hunting Units</h1>
+    <!-- <p>Either Sex Archery Map</p> -->
+    <form method="POST" action="/results">
+        <div class="form-row">
+            <div class="form-group col-sm-6 col-md-3">
+                <label for="species-select">Species</label>
+                <select class="form-control" name="species" id="species-select">
+                    <option>Elk</option>
+                    <option disabled>Deer (coming soon)</option>
+                    <option disabled>Bear (coming soon)</option>
+                    <option disabled>Anteloupe (coming soon)</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-6 col-md-3">
+                <label for="sex-select">Sex</label>
+                <select class="form-control" name="sex" id="sex-select" required>
+                    <option>Either</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-6 col-md-3">
+                <label for="method-select">Method</label>
+                <select class="form-control" name="method" id="method-select" required>
+                    <option>Rifle (Nerds)</option>
+                    <option>Archery (Alpha Males)</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-6 col-md-3">
+                <label for="unit-select">Unit (between 1-99)</label>
+                <input id="unit-select" name="unit" placeholder="481" class="form-control" type="text" type="number"
+                    min="0" max="999" size="1" maxlength="3">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
